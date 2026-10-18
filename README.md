@@ -28,12 +28,12 @@ Everything is reversible: packages are **disabled** for user 0, never uninstalle
   player/gallery and the Ambient screensaver.
 - **Launcher** `com.gathin.tvhome` installed as the default home. The stock `com.google.android.tvlauncher`
   is disabled.
-  Dock: YouTube, Netflix, Prime Video, JioHotstar. Play Store and the rest are in the grid below.
+  Dock: YouTube, Netflix, Prime Video, JioHotstar. On a TV without JioHotstar (the second set), Play Store
+  takes the 4th slot. Everything else is in the grid below.
 
 ## Scripts
 
-Two identical MiTV-AXSO0 sets run this setup: `192.168.0.120` and `192.168.0.112` (same firmware;
-the second also has SonyLIV). Run each command once per TV with its `TV_HOST`.
+Two identical MiTV-AXSO0 sets run this setup: `192.168.0.120` and `192.168.0.112` (same firmware). Run each command once per TV with its `TV_HOST`.
 
 Every script takes `TV_HOST` (the first TV is at `192.168.0.120`, which can change with DHCP: check
 `dscacheutil -q host -a name <cast-id>.local` or the router). They use the stock `adb` when it can reach the

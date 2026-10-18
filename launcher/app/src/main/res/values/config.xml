@@ -5,12 +5,14 @@
 -->
 <resources>
 
-    <!-- Apps pinned to the dock row at the bottom, in this order. Missing apps are skipped. -->
+    <!-- Apps pinned to the dock row at the bottom, in this order. Missing apps are skipped and the next
+         one moves up, so list a fallback after the dock size (Play Store fills in on TVs without JioHotstar). -->
     <string-array name="dock_apps">
         <item>com.google.android.youtube.tv</item>
         <item>com.netflix.ninja</item>
         <item>com.amazon.amazonvideo.livingroom</item>
         <item>in.startv.hotstar</item>
+        <item>com.android.vending</item>
     </string-array>
 
     <!-- Apps never shown as tiles (e.g. the Live TV app, which the Inputs menu already covers). -->
