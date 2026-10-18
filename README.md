@@ -28,7 +28,7 @@ Everything is reversible: packages are **disabled** for user 0, never uninstalle
   player/gallery and the Ambient screensaver.
 - **Launcher** `com.gathin.tvhome` installed as the default home. The stock `com.google.android.tvlauncher`
   is disabled.
-  Dock: YouTube, Netflix, Prime Video, Play Store.
+  Dock: YouTube, Netflix, Prime Video, JioHotstar. Play Store and the rest are in the grid below.
 
 ## Scripts
 
