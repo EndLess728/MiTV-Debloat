@@ -32,7 +32,10 @@ Everything is reversible: packages are **disabled** for user 0, never uninstalle
 
 ## Scripts
 
-Every script takes `TV_HOST` (the TV is at `192.168.0.120`, which can change with DHCP: check
+Two identical MiTV-AXSO0 sets run this setup: `192.168.0.120` and `192.168.0.112` (same firmware;
+the second also has SonyLIV). Run each command once per TV with its `TV_HOST`.
+
+Every script takes `TV_HOST` (the first TV is at `192.168.0.120`, which can change with DHCP: check
 `dscacheutil -q host -a name <cast-id>.local` or the router). They use the stock `adb` when it can reach the
 TV and otherwise fall back to the pure-Python client in `tools/tv.py`, for when macOS Local Network
 privacy blocks `adb`.
