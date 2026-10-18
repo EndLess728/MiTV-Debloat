@@ -5,7 +5,8 @@ on that firmware, grouped and commented. These are starting points: comment out 
 
 | Folder | TV | OS | Notes |
 |---|---|---|---|
+| `xiaomi-mitv-axso0/` | Xiaomi Mi TV (MiTV-AXSO0, dangal) | Android TV 9 | PatchWall, Mi analytics; MiLink, Cast and Miracast kept |
 | `xiaomi-mi-tv-4a/` | Xiaomi Mi TV 4A (MiTV-MOOQ1) | Android TV 10 | PatchWall, Mi analytics, SmartShare, MiLink |
 
-To add your TV, see [CONTRIBUTING.md](../CONTRIBUTING.md). The quickest way to get a list is to
+To add a TV, see the original repo, [Gathin23/tv-vibehack](https://github.com/Gathin23/tv-vibehack). The quickest way to get a list is to
 run the prompt in [PROMPT.md](../PROMPT.md) and copy the packages your assistant disabled.

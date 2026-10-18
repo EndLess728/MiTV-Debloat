@@ -1,0 +1,39 @@
+# Xiaomi Mi TV (MiTV-AXSO0, codename dangal, Amlogic/droidlogic), Android TV 9, firmware PI.6036
+#
+# Apply:   tools/disable.sh examples/xiaomi-mitv-axso0/debloat.txt
+# Undo:    tools/restore.sh examples/xiaomi-mitv-axso0/debloat.txt
+# Everything is DISABLED, not uninstalled. Comment out any line you want to keep.
+#
+# Kept on purpose: MiLink (com.mitv.milinkservice, used by the MiTV-Remote app on port 6091),
+# Chromecast (mediashell), Miracast (smartshare + wfdsinkhelperservice), Google Assistant (katniss),
+# firmware updates (updateservice), USB media (mediaexplorer, videoplayer, gallery), Ambient screensaver.
+
+# Telemetry
+com.miui.tv.analytics
+com.xiaomi.statistic
+com.google.android.feedback
+com.google.android.tv.bugreportsender
+
+# PatchWall and content rows / promos
+com.mitv.tvhome.atv
+com.xm.webcontent
+com.xiaomi.floatingframe
+com.google.android.tvrecommendations
+com.google.android.leanbacklauncher.recommendations
+android.autoinstalls.config.xioami.dangal   # Play auto-installs (sic, "xioami")
+
+# Background clutter
+com.xiaomi.mitv.tvmanager              # "TV Manager" cleaner
+com.xiaomi.mitv.handbook               # user manual
+com.xiaomi.android.TV.audio            # factory audio debug tool
+com.android.camera2                    # no camera on this TV
+com.google.android.tv.remote.service   # Google TV phone-app remote (MiLink remote is used instead)
+
+# Preloaded apps not used
+com.xiaomi.mimusic2
+com.google.android.play.games
+com.google.android.videos              # Play Movies
+com.google.android.youtube.tvmusic
+
+# Stock launchers, replaced by launcher/ (build-and-install.sh disables tvlauncher itself)
+com.google.android.leanbacklauncher
